@@ -1,10 +1,10 @@
 #代码演示：用Python进行数据分析——以MovieLens电影评分数据集为例
 #演示过程见简书http://www.jianshu.com/p/6da523227ace
-import pandas as pd
-ratings=pd.read_csv('#你的文件路径',header=0)
-ratings[0:5]
-movies=pd.read_csv('你的文件路径',header=0)
-movies[0:5]
+<br />import pandas as pd
+<br />ratings=pd.read_csv('#你的文件路径',header=0)
+<br />ratings[0:5]
+<br />movies=pd.read_csv('你的文件路径',header=0)
+<br />movies[0:5]
 data=ratings.merge(movies,on='movieId')
 data[0:5]
 ratings_by_title=data.groupby('title').size()#评论数大小
